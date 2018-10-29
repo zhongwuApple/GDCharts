@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193DCAAF2186B8BD007BB966 /* GDChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCA9E2186B8BC007BB966 /* GDChartsView.m */; };
+		193DCAB02186B8BD007BB966 /* GDBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAA02186B8BC007BB966 /* GDBackGroundView.m */; };
+		193DCAB12186B8BD007BB966 /* GDChartsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAA32186B8BC007BB966 /* GDChartsViewModel.m */; };
+		193DCAB22186B8BD007BB966 /* GDChartsViewBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAA72186B8BD007BB966 /* GDChartsViewBinder.m */; };
+		193DCAB32186B8BD007BB966 /* GDChartsConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAAB2186B8BD007BB966 /* GDChartsConfigModel.m */; };
+		193DCAB42186B8BD007BB966 /* GDChartsGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAAD2186B8BD007BB966 /* GDChartsGridModel.m */; };
+		193DCAB82186B9BD007BB966 /* GDChartsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAB72186B9BD007BB966 /* GDChartsService.m */; };
+		196D25B921871C0F008CD39E /* GDChartsStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 196D25B821871C0F008CD39E /* GDChartsStockModel.m */; };
 		19985AB5217DE055006E560F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AB4217DE055006E560F /* AppDelegate.m */; };
 		19985AB8217DE055006E560F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AB7217DE055006E560F /* ViewController.m */; };
 		19985ABB217DE055006E560F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19985AB9217DE055006E560F /* Main.storyboard */; };
@@ -15,6 +23,7 @@
 		19985AC3217DE056006E560F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AC2217DE056006E560F /* main.m */; };
 		19985ACD217DE056006E560F /* GDChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985ACC217DE056006E560F /* GDChartsTests.m */; };
 		19985AD8217DE056006E560F /* GDChartsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AD7217DE056006E560F /* GDChartsUITests.m */; };
+		C7D4C773C7A24008C392B846 /* Pods_GDCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB688ACD9BE79DD3EB9A50E /* Pods_GDCharts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17544878DBF044C3208F3FD7 /* Pods-GDCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDCharts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GDCharts/Pods-GDCharts.debug.xcconfig"; sourceTree = "<group>"; };
+		193DCA9C2186B8BC007BB966 /* GDChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDChartsView.h; sourceTree = "<group>"; };
+		193DCA9D2186B8BC007BB966 /* GDChartsRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDChartsRender.h; sourceTree = "<group>"; };
+		193DCA9E2186B8BC007BB966 /* GDChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDChartsView.m; sourceTree = "<group>"; };
+		193DCAA02186B8BC007BB966 /* GDBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBackGroundView.m; sourceTree = "<group>"; };
+		193DCAA12186B8BC007BB966 /* GDBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBackGroundView.h; sourceTree = "<group>"; };
+		193DCAA32186B8BC007BB966 /* GDChartsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDChartsViewModel.m; sourceTree = "<group>"; };
+		193DCAA42186B8BC007BB966 /* GDChartsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDChartsViewModel.h; sourceTree = "<group>"; };
+		193DCAA62186B8BD007BB966 /* GDChartsViewBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDChartsViewBinder.h; sourceTree = "<group>"; };
+		193DCAA72186B8BD007BB966 /* GDChartsViewBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDChartsViewBinder.m; sourceTree = "<group>"; };
+		193DCAAA2186B8BD007BB966 /* GDChartsConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDChartsConfigModel.h; sourceTree = "<group>"; };
+		193DCAAB2186B8BD007BB966 /* GDChartsConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDChartsConfigModel.m; sourceTree = "<group>"; };
+		193DCAAD2186B8BD007BB966 /* GDChartsGridModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDChartsGridModel.m; sourceTree = "<group>"; };
+		193DCAAE2186B8BD007BB966 /* GDChartsGridModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDChartsGridModel.h; sourceTree = "<group>"; };
+		193DCAB62186B9BD007BB966 /* GDChartsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDChartsService.h; sourceTree = "<group>"; };
+		193DCAB72186B9BD007BB966 /* GDChartsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsService.m; sourceTree = "<group>"; };
+		196D25B721871C0F008CD39E /* GDChartsStockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDChartsStockModel.h; sourceTree = "<group>"; };
+		196D25B821871C0F008CD39E /* GDChartsStockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsStockModel.m; sourceTree = "<group>"; };
 		19985AB0217DE055006E560F /* GDCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19985AB3217DE055006E560F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		19985AB4217DE055006E560F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +78,8 @@
 		19985AD3217DE056006E560F /* GDChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19985AD7217DE056006E560F /* GDChartsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsUITests.m; sourceTree = "<group>"; };
 		19985AD9217DE056006E560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		390B1308BA0EEF5439654846 /* Pods-GDCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDCharts.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDCharts/Pods-GDCharts.release.xcconfig"; sourceTree = "<group>"; };
+		BAB688ACD9BE79DD3EB9A50E /* Pods_GDCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D4C773C7A24008C392B846 /* Pods_GDCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		193DCA9B2186B8BC007BB966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				193DCA9C2186B8BC007BB966 /* GDChartsView.h */,
+				193DCA9D2186B8BC007BB966 /* GDChartsRender.h */,
+				193DCA9E2186B8BC007BB966 /* GDChartsView.m */,
+				193DCA9F2186B8BC007BB966 /* BackGroundView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		193DCA9F2186B8BC007BB966 /* BackGroundView */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAA12186B8BC007BB966 /* GDBackGroundView.h */,
+				193DCAA02186B8BC007BB966 /* GDBackGroundView.m */,
+			);
+			path = BackGroundView;
+			sourceTree = "<group>";
+		};
+		193DCAA22186B8BC007BB966 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAA42186B8BC007BB966 /* GDChartsViewModel.h */,
+				193DCAA32186B8BC007BB966 /* GDChartsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		193DCAA52186B8BD007BB966 /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAA62186B8BD007BB966 /* GDChartsViewBinder.h */,
+				193DCAA72186B8BD007BB966 /* GDChartsViewBinder.m */,
+			);
+			path = Binder;
+			sourceTree = "<group>";
+		};
+		193DCAA82186B8BD007BB966 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAA92186B8BD007BB966 /* Config */,
+				193DCAAC2186B8BD007BB966 /* Grid */,
+				196D25B721871C0F008CD39E /* GDChartsStockModel.h */,
+				196D25B821871C0F008CD39E /* GDChartsStockModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		193DCAA92186B8BD007BB966 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAAA2186B8BD007BB966 /* GDChartsConfigModel.h */,
+				193DCAAB2186B8BD007BB966 /* GDChartsConfigModel.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		193DCAAC2186B8BD007BB966 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAAE2186B8BD007BB966 /* GDChartsGridModel.h */,
+				193DCAAD2186B8BD007BB966 /* GDChartsGridModel.m */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		193DCAB52186B9A6007BB966 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				193DCAB62186B9BD007BB966 /* GDChartsService.h */,
+				193DCAB72186B9BD007BB966 /* GDChartsService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		19985AA7217DE055006E560F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +191,8 @@
 				19985ACB217DE056006E560F /* GDChartsTests */,
 				19985AD6217DE056006E560F /* GDChartsUITests */,
 				19985AB1217DE055006E560F /* Products */,
+				75A438A8E7B88F4EC97247A4 /* Pods */,
+				9DE302E207DB5D738CF9E5BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +209,11 @@
 		19985AB2217DE055006E560F /* GDCharts */ = {
 			isa = PBXGroup;
 			children = (
+				193DCAB52186B9A6007BB966 /* Service */,
+				193DCAA52186B8BD007BB966 /* Binder */,
+				193DCAA82186B8BD007BB966 /* Model */,
+				193DCA9B2186B8BC007BB966 /* View */,
+				193DCAA22186B8BC007BB966 /* ViewModel */,
 				19985AB3217DE055006E560F /* AppDelegate.h */,
 				19985AB4217DE055006E560F /* AppDelegate.m */,
 				19985AB6217DE055006E560F /* ViewController.h */,
@@ -132,6 +245,23 @@
 			path = GDChartsUITests;
 			sourceTree = "<group>";
 		};
+		75A438A8E7B88F4EC97247A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17544878DBF044C3208F3FD7 /* Pods-GDCharts.debug.xcconfig */,
+				390B1308BA0EEF5439654846 /* Pods-GDCharts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DE302E207DB5D738CF9E5BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAB688ACD9BE79DD3EB9A50E /* Pods_GDCharts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19985ADC217DE056006E560F /* Build configuration list for PBXNativeTarget "GDCharts" */;
 			buildPhases = (
+				CEBD28C2DC818CF9A6DB68E6 /* [CP] Check Pods Manifest.lock */,
 				19985AAC217DE055006E560F /* Sources */,
 				19985AAD217DE055006E560F /* Frameworks */,
 				19985AAE217DE055006E560F /* Resources */,
+				018AEAC3E19C1B5B267F62DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,14 +389,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		018AEAC3E19C1B5B267F62DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GDCharts/Pods-GDCharts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GDCharts/Pods-GDCharts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEBD28C2DC818CF9A6DB68E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDCharts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		19985AAC217DE055006E560F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193DCAAF2186B8BD007BB966 /* GDChartsView.m in Sources */,
+				193DCAB02186B8BD007BB966 /* GDBackGroundView.m in Sources */,
 				19985AB8217DE055006E560F /* ViewController.m in Sources */,
 				19985AC3217DE056006E560F /* main.m in Sources */,
+				193DCAB12186B8BD007BB966 /* GDChartsViewModel.m in Sources */,
+				196D25B921871C0F008CD39E /* GDChartsStockModel.m in Sources */,
 				19985AB5217DE055006E560F /* AppDelegate.m in Sources */,
+				193DCAB22186B8BD007BB966 /* GDChartsViewBinder.m in Sources */,
+				193DCAB82186B9BD007BB966 /* GDChartsService.m in Sources */,
+				193DCAB32186B8BD007BB966 /* GDChartsConfigModel.m in Sources */,
+				193DCAB42186B8BD007BB966 /* GDChartsGridModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,32 +616,42 @@
 		};
 		19985ADD217DE056006E560F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17544878DBF044C3208F3FD7 /* Pods-GDCharts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V973TY4SQ9;
 				INFOPLIST_FILE = GDCharts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.predict..GDCharts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92688043-6a41-4f2d-af9d-46e7cef90fe8";
+				PROVISIONING_PROFILE_SPECIFIER = PTALL;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		19985ADE217DE056006E560F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 390B1308BA0EEF5439654846 /* Pods-GDCharts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = V973TY4SQ9;
 				INFOPLIST_FILE = GDCharts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.predict..GDCharts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92688043-6a41-4f2d-af9d-46e7cef90fe8";
+				PROVISIONING_PROFILE_SPECIFIER = PTALL;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

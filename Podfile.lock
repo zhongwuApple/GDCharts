@@ -1,0 +1,34 @@
+PODS:
+  - DateTools (2.0.0)
+  - Masonry (1.1.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - DateTools
+  - Masonry
+  - ReactiveCocoa (~> 2.5)
+  - YYModel (= 1.0.4)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DateTools
+    - Masonry
+    - ReactiveCocoa
+    - YYModel
+
+SPEC CHECKSUMS:
+  DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 968047c8119c640c8145025a8c2a2d8393d53463
+
+COCOAPODS: 1.5.0
