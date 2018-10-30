@@ -24,16 +24,17 @@
     NSInteger count = 400;
     NSInteger currentTime = [[NSDate date] timeIntervalSince1970];
     NSMutableArray *result = [NSMutableArray new];
-    for (NSInteger index=0; index<400; index++) {
+    for (NSInteger index=0; index<count; index++) {
         GDChartsStockModel *amodel = [GDChartsStockModel new];
         amodel.closingTime = currentTime-index;
         amodel.closingPrice = [self randomPrice];
+        [result addObject:amodel];
     }        
     return result;
 }
 
-- (RACSignal *)fetchData{
-    return [RACSignal return:[self testData]];
+- (RACSignal *)fetchData{        
+    return [[RACSignal return:[self testData]] delay:0.2];
 }
 
 

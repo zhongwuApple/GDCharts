@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) GDBackGroundView                  *bgView;
 
+
+
 @end
 
 @implementation GDChartsView
@@ -24,7 +26,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-//        [self setup];
+        [self setup];
     }
     return self;
 }
@@ -32,14 +34,17 @@
 
 - (void)setup{
     [self addSubview:self.scrollView];
-    [self addSubview:self.bgView];
+    [self addSubview:self.linecharView];
+    
+    
 }
 
 
 
-- (void)setupWithConfig:(GDChartsConfigModel *)configModel{    
-    self.bgView.frame = CGRectMake(0, 0, configModel.gridWidth, configModel.gridHeight);
-    
+- (void)updateWithConfigModel:(GDChartsConfigModel *)configModel contentViewRect:(CGRect)arect{
+    [self.scrollView setContentSize:arect.size];
+    self.scrollView.contentOffset = arect.origin;
+    self.linecharView.frame = CGRectMake(0, 0, configModel.chartsWidth, configModel.chartsHeight);
 }
 
 
@@ -66,6 +71,15 @@
     return _bgView;
 }
 
+
+- (GDLinecharView *)linecharView{
+    if (!_linecharView) {
+        _linecharView = [GDLinecharView new];
+        _linecharView.backgroundColor = [UIColor orangeColor];
+        _linecharView.userInteractionEnabled = NO;
+    }
+    return _linecharView;
+}
 
 
 

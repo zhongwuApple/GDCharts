@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "GDChartsConfigModel.h"
 #import "GDChartsRender.h"
-
+#import "GDLinecharView.h"
 @interface GDChartsView : UIView<GDChartsRender>
 
 @property (nonatomic, strong) UIScrollView            *scrollView;
+@property (nonatomic, strong) GDLinecharView          *linecharView;
 
-- (void)setupWithConfig:(GDChartsConfigModel *)configModel;
+
+- (void)updateWithConfigModel:(GDChartsConfigModel *)configModel contentViewRect:(CGRect)arect;
 
 
 

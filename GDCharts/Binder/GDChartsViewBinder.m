@@ -12,40 +12,47 @@
 
 @interface GDChartsViewBinder()<UIScrollViewDelegate, GDChartsViewModelDelegate>
 
-@property (nonatomic, strong) GDChartsViewModel         *viewModel;
+
 
 @end
 
 @implementation GDChartsViewBinder
 
 
-- (instancetype)init
+- (instancetype)initWithView:(UIView *)aview
 {
     self = [super init];
     if (self) {
-        
+        self.view = (GDChartsView *)aview;
+        [self setup];
     }
     return self;
 }
 
-- (void)setViewModel:(id)aviewmodel{
-    _viewModel = (GDChartsViewModel *)aviewmodel;
-    _viewModel.delegate = self;
+- (void)bindViewModel:(id)aviewmodel{
+    self.viewModel = (GDChartsViewModel *)aviewmodel;
+    self.viewModel.delegate = self;
 }
-
 
 
 - (void)setup{
     self.view.scrollView.delegate = self;
-        
+}
+
+- (void)viewWillAppear{
+    
+    
+    
 }
 
 
 
-
-
-
 #pragma mark delegate
+
+- (void)updateContentView:(CGRect )arect{
+    [self.view updateWithConfigModel:self.viewModel.configModel contentViewRect:arect];
+}
+
 - (void)updateRenderResource:(NSDictionary *)resource{
     [self.view render:resource];
 }

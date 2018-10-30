@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "GDChartsView.h"
-
+#import "GDChartsViewModel.h"
 @interface GDChartsViewBinder : NSObject
 
-@property (nonatomic, strong) GDChartsView          *view;
+@property (nonatomic, strong) GDChartsView              *view;
+@property (nonatomic, strong) GDChartsViewModel         *viewModel;
 
-- (void)setViewModel:(id)aviewmodel;
+- (instancetype)initWithView:(UIView *)aview;
+
+- (void)bindViewModel:(id)aviewmodel;
+
+- (void)viewWillAppear;
 
 @end
 

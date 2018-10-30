@@ -15,7 +15,7 @@
 //重置视图配置(sysmbl 账号切换等需要重置)
 //- (void)restChartViewConfig;
 
-//- (void)updateContentView:(CGRect )rect;
+- (void)updateContentView:(CGRect )rect;
 
 - (void)updateRenderResource:(NSDictionary *)resource;
 
@@ -31,6 +31,12 @@
 
 
 @property (nonatomic, strong) NSMutableArray                      *stockModels;
+
+
+
+- (instancetype)initConfigModel:(GDChartsConfigModel *)aconfigModel;
+
+
 
 
 
