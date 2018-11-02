@@ -61,10 +61,9 @@
 #pragma mark scrollView delegate
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
-//    NSLog(@"wp = %f, %f, %f, %f", scrollView.contentOffset.x, velocity.x, targetContentOffset->x, targetContentOffset->y );
-//    CGPoint offset = CGPointMake(targetContentOffset->x, 0);
-//    [self.viewModel updateContentOffset:scrollView.contentOffset];
-//    [self.viewModel updateContentOffset:offset];
+    NSLog(@"scrollViewW  当前contentOffsetX = %f, 加速方向 = %f, targetContentOffsetX = %f", scrollView.contentOffset.x, velocity.x, targetContentOffset->x );
+    CGPoint contentOffset = CGPointMake(targetContentOffset->x, targetContentOffset->y);
+    [self.viewModel updateTargetContentOffset:contentOffset];
 }
 
 

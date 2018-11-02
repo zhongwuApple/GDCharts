@@ -17,19 +17,18 @@
 
 @property (nonatomic, assign) CGFloat                           chartsContentViewHeight;
 
-//单页 图表的宽度
-@property (nonatomic, assign) CGFloat                           chartsDisplayViewWidth;
-//单页 图表的高度
-@property (nonatomic, assign) CGFloat                           chartsDisplayViewHeight;
-
-//绘制图表的宽高 chartsContentViewWidth >= chartsWidth  chartsDisplayViewHeight >= chartsHeight;
+//单页宽度  chartsViewWidth <= chartsContentViewWidth
 @property (nonatomic, assign) CGFloat                           chartsWidth;
+//单页高度 chartsViewHeight <= chartsContentViewHeight
 @property (nonatomic, assign) CGFloat                           chartsHeight;
 
 
+@property (nonatomic, assign) CGFloat                           linechartWidth;
+@property (nonatomic, assign) CGFloat                           linechartHeight;
+
+
 #pragma mark 网格
-//单个网格在屏幕上的宽度
-// gridWidth = (chartsDisplayViewWidth-timeViewOffset) / verticalLineCount;
+//单个蜡烛在屏幕上的宽度 不能为0
 @property (nonatomic, assign) CGFloat                           candleWidth;
 
 

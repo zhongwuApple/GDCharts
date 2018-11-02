@@ -37,7 +37,7 @@
 - (instancetype)initConfigModel:(GDChartsConfigModel *)aconfigModel;
 
 
-
+- (void)updateTargetContentOffset:(CGPoint)targetContentOffset;
 
 
 

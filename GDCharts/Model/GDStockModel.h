@@ -1,16 +1,17 @@
 //
-//  GDChartsStockModel.h
+//  GDStockModel.h
 //  GDCharts
 //
-//  Created by tiger on 2018/10/29.
+//  Created by tiger on 2018/11/2.
 //  Copyright © 2018 tiger. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface GDChartsStockModel : NSObject
+@interface GDStockModel : NSObject
+
 //收盘价
-@property (nonatomic,copy) NSString     *closingPrice;
+@property (nonatomic,copy) NSString      *closingPrice;
 //收盘时间
 @property (nonatomic,assign) NSInteger   closingTime;
 

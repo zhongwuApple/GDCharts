@@ -12,4 +12,6 @@
 
 - (void)render:(NSDictionary *)resource;
 
+- (void)clear;
+
 @end

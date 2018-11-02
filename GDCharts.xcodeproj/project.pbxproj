@@ -15,7 +15,8 @@
 		193DCAB42186B8BD007BB966 /* GDChartsGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAAD2186B8BD007BB966 /* GDChartsGridModel.m */; };
 		193DCAB82186B9BD007BB966 /* GDChartsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 193DCAB72186B9BD007BB966 /* GDChartsService.m */; };
 		194F7C1B2187F9F300218B58 /* GDChartsCalculationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 194F7C1A2187F9F300218B58 /* GDChartsCalculationModel.m */; };
-		196D25B921871C0F008CD39E /* GDChartsStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 196D25B821871C0F008CD39E /* GDChartsStockModel.m */; };
+		19650A2E218C3635002DEC6D /* GDLinecharModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19650A2D218C3635002DEC6D /* GDLinecharModel.m */; };
+		19650A31218C36EB002DEC6D /* GDStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19650A30218C36EB002DEC6D /* GDStockModel.m */; };
 		196D25BD21871EBD008CD39E /* GDLinecharView.m in Sources */ = {isa = PBXBuildFile; fileRef = 196D25BC21871EBD008CD39E /* GDLinecharView.m */; };
 		19985AB5217DE055006E560F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AB4217DE055006E560F /* AppDelegate.m */; };
 		19985AB8217DE055006E560F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AB7217DE055006E560F /* ViewController.m */; };
@@ -25,6 +26,8 @@
 		19985AC3217DE056006E560F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AC2217DE056006E560F /* main.m */; };
 		19985ACD217DE056006E560F /* GDChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985ACC217DE056006E560F /* GDChartsTests.m */; };
 		19985AD8217DE056006E560F /* GDChartsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19985AD7217DE056006E560F /* GDChartsUITests.m */; };
+		19F3E942218A9CFF00E8D231 /* GDNSString+Number+GD.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E941218A9CFF00E8D231 /* GDNSString+Number+GD.m */; };
+		19F3E945218AA19C00E8D231 /* GDCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E944218AA19C00E8D231 /* GDCategories.m */; };
 		C7D4C773C7A24008C392B846 /* Pods_GDCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB688ACD9BE79DD3EB9A50E /* Pods_GDCharts.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +67,10 @@
 		193DCAB72186B9BD007BB966 /* GDChartsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsService.m; sourceTree = "<group>"; };
 		194F7C192187F9F300218B58 /* GDChartsCalculationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDChartsCalculationModel.h; sourceTree = "<group>"; };
 		194F7C1A2187F9F300218B58 /* GDChartsCalculationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsCalculationModel.m; sourceTree = "<group>"; };
-		196D25B721871C0F008CD39E /* GDChartsStockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDChartsStockModel.h; sourceTree = "<group>"; };
-		196D25B821871C0F008CD39E /* GDChartsStockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsStockModel.m; sourceTree = "<group>"; };
+		19650A2C218C3635002DEC6D /* GDLinecharModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLinecharModel.h; sourceTree = "<group>"; };
+		19650A2D218C3635002DEC6D /* GDLinecharModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDLinecharModel.m; sourceTree = "<group>"; };
+		19650A2F218C36EB002DEC6D /* GDStockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDStockModel.h; sourceTree = "<group>"; };
+		19650A30218C36EB002DEC6D /* GDStockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDStockModel.m; sourceTree = "<group>"; };
 		196D25BB21871EBD008CD39E /* GDLinecharView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLinecharView.h; sourceTree = "<group>"; };
 		196D25BC21871EBD008CD39E /* GDLinecharView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDLinecharView.m; sourceTree = "<group>"; };
 		19985AB0217DE055006E560F /* GDCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +89,10 @@
 		19985AD3217DE056006E560F /* GDChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19985AD7217DE056006E560F /* GDChartsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDChartsUITests.m; sourceTree = "<group>"; };
 		19985AD9217DE056006E560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F3E940218A9CFF00E8D231 /* GDNSString+Number+GD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDNSString+Number+GD.h"; sourceTree = "<group>"; };
+		19F3E941218A9CFF00E8D231 /* GDNSString+Number+GD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDNSString+Number+GD.m"; sourceTree = "<group>"; };
+		19F3E943218AA19C00E8D231 /* GDCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDCategories.h; sourceTree = "<group>"; };
+		19F3E944218AA19C00E8D231 /* GDCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDCategories.m; sourceTree = "<group>"; };
 		390B1308BA0EEF5439654846 /* Pods-GDCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDCharts.release.xcconfig"; path = "Pods/Target Support Files/Pods-GDCharts/Pods-GDCharts.release.xcconfig"; sourceTree = "<group>"; };
 		BAB688ACD9BE79DD3EB9A50E /* Pods_GDCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,8 +169,10 @@
 			children = (
 				193DCAA92186B8BD007BB966 /* Config */,
 				193DCAAC2186B8BD007BB966 /* Grid */,
-				196D25B721871C0F008CD39E /* GDChartsStockModel.h */,
-				196D25B821871C0F008CD39E /* GDChartsStockModel.m */,
+				19650A2C218C3635002DEC6D /* GDLinecharModel.h */,
+				19650A2D218C3635002DEC6D /* GDLinecharModel.m */,
+				19650A2F218C36EB002DEC6D /* GDStockModel.h */,
+				19650A30218C36EB002DEC6D /* GDStockModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +238,7 @@
 		19985AB2217DE055006E560F /* GDCharts */ = {
 			isa = PBXGroup;
 			children = (
+				19F3E93E218A9CFF00E8D231 /* Foundation */,
 				193DCAA82186B8BD007BB966 /* Model */,
 				193DCAB52186B9A6007BB966 /* Service */,
 				193DCAA22186B8BC007BB966 /* ViewModel */,
@@ -261,6 +273,25 @@
 				19985AD9217DE056006E560F /* Info.plist */,
 			);
 			path = GDChartsUITests;
+			sourceTree = "<group>";
+		};
+		19F3E93E218A9CFF00E8D231 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				19F3E93F218A9CFF00E8D231 /* NSString */,
+				19F3E943218AA19C00E8D231 /* GDCategories.h */,
+				19F3E944218AA19C00E8D231 /* GDCategories.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		19F3E93F218A9CFF00E8D231 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				19F3E940218A9CFF00E8D231 /* GDNSString+Number+GD.h */,
+				19F3E941218A9CFF00E8D231 /* GDNSString+Number+GD.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		75A438A8E7B88F4EC97247A4 /* Pods */ = {
@@ -457,18 +488,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19650A31218C36EB002DEC6D /* GDStockModel.m in Sources */,
 				194F7C1B2187F9F300218B58 /* GDChartsCalculationModel.m in Sources */,
 				193DCAAF2186B8BD007BB966 /* GDChartsView.m in Sources */,
 				193DCAB02186B8BD007BB966 /* GDBackGroundView.m in Sources */,
 				19985AB8217DE055006E560F /* ViewController.m in Sources */,
 				19985AC3217DE056006E560F /* main.m in Sources */,
 				193DCAB12186B8BD007BB966 /* GDChartsViewModel.m in Sources */,
-				196D25B921871C0F008CD39E /* GDChartsStockModel.m in Sources */,
 				19985AB5217DE055006E560F /* AppDelegate.m in Sources */,
+				19F3E945218AA19C00E8D231 /* GDCategories.m in Sources */,
 				193DCAB22186B8BD007BB966 /* GDChartsViewBinder.m in Sources */,
 				193DCAB82186B9BD007BB966 /* GDChartsService.m in Sources */,
 				193DCAB32186B8BD007BB966 /* GDChartsConfigModel.m in Sources */,
 				193DCAB42186B8BD007BB966 /* GDChartsGridModel.m in Sources */,
+				19F3E942218A9CFF00E8D231 /* GDNSString+Number+GD.m in Sources */,
+				19650A2E218C3635002DEC6D /* GDLinecharModel.m in Sources */,
 				196D25BD21871EBD008CD39E /* GDLinecharView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

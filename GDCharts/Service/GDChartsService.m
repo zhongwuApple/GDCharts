@@ -8,14 +8,14 @@
 
 #import "GDChartsService.h"
 #import <DateTools/DateTools.h>
-#import "GDChartsStockModel.h"
+#import "GDStockModel.h"
 
 @implementation GDChartsService
 
 
 - (NSString *)randomPrice{
     NSInteger number = (arc4random() % 100) + 200;
-    NSString *result = [NSString stringWithFormat:@"%zd", number];
+    NSString *result = [NSString stringWithFormat:@"%ld", (long)number];
     return result;
 }
 
@@ -25,7 +25,7 @@
     NSInteger currentTime = [[NSDate date] timeIntervalSince1970];
     NSMutableArray *result = [NSMutableArray new];
     for (NSInteger index=0; index<count; index++) {
-        GDChartsStockModel *amodel = [GDChartsStockModel new];
+        GDStockModel *amodel = [GDStockModel new];
         amodel.closingTime = currentTime-index;
         amodel.closingPrice = [self randomPrice];
         [result addObject:amodel];
@@ -40,7 +40,9 @@
 
 
 
-
+- (RACSignal *)loadMoreData{
+    return nil;
+}
 
 
 

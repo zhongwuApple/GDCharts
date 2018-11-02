@@ -29,6 +29,8 @@
     [self.chartsView bindViewModel:aviewModel];
     
     self.chartsView.view.backgroundColor = [UIColor yellowColor];
+    
+    
 }
 
 
@@ -38,6 +40,8 @@
     [super viewDidLoad];
     [self addChartsView];
     [self.view addSubview:self.chartsView.view];
+
+    
     
 }
 

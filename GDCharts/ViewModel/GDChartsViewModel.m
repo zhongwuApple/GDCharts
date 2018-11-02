@@ -15,6 +15,9 @@
 
 @property (nonatomic, strong) GDChartsService           *service;
 @property (nonatomic, strong) GDChartsCalculationModel  *calculationModel;
+
+@property (nonatomic, assign) CGPoint                   targetContentOffset;
+
 @end
 
 @implementation GDChartsViewModel
@@ -47,12 +50,36 @@
 - (void)updateStockModelsWithArray:(NSArray *)array{
     if ( 0 == array.count ) return;
     [self.stockModels addObjectsFromArray:array];
-    CGRect rect = [self.calculationModel calcRectWithModels:self.stockModels configModel:self.configModel];
+    CGRect rect = [self.calculationModel calcContentViewRectWithConfigModel:self.configModel models:self.stockModels];
     self.configModel.chartsContentViewWidth = rect.size.width;
-    
     if ([self.delegate respondsToSelector:@selector(updateContentView:)]) {
         [self.delegate updateContentView:rect];
-    }        
+    }    
+    [self updateRenderResource];
+}
+
+
+
+
+
+- (void)updateRenderResource{
+    NSMutableDictionary *result = [NSMutableDictionary new];
+    NSArray *stockModels = [self.stockModels copy];
+    CGPoint targetContentOffset = self.targetContentOffset;
+    GDChartsConfigModel *configModel = self.configModel;
+    
+    NSInteger displayStartIndex = [self.calculationModel calcDisplayStartIndexWithConfigModel:configModel models:stockModels offset:targetContentOffset.x];
+    NSArray *displayModels = [self.calculationModel subDisplayModelsWithConfigModel:configModel displayStartIndex:displayStartIndex models:stockModels];
+    
+    NSArray *maxMinPrice = [self.calculationModel maxMinPrice:displayModels];
+    NSArray *points = [self.calculationModel calcPositionWithConfigModel:configModel maxMinPrice:maxMinPrice
+                                                       displayStartIndex:displayStartIndex offset:targetContentOffset.x displayModels:displayModels];
+    
+    
+    [result setValue:points forKey:@"points"];
+    
+    if ( [self.delegate respondsToSelector:@selector(updateRenderResource:)] )
+        [self.delegate updateRenderResource:result];
 }
 
 
@@ -70,13 +97,10 @@
 
 
 
-
-
-
-
-
-
-
+- (void)updateTargetContentOffset:(CGPoint)targetContentOffset{
+    self.targetContentOffset = targetContentOffset;
+    [self updateRenderResource];
+}
 
 
 

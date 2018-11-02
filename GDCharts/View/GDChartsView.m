@@ -44,15 +44,20 @@
 - (void)updateWithConfigModel:(GDChartsConfigModel *)configModel contentViewRect:(CGRect)arect{
     [self.scrollView setContentSize:arect.size];
     self.scrollView.contentOffset = arect.origin;
-    self.linecharView.frame = CGRectMake(0, 0, configModel.chartsWidth, configModel.chartsHeight);
+    self.linecharView.frame = CGRectMake(0, 0, configModel.linechartWidth, configModel.linechartHeight);
 }
 
 
 - (void)render:(NSDictionary *)resource{
     [self.bgView render:resource];
+    [self.linecharView render:resource];
     
 }
 
+- (void)clear{
+    [self.bgView clear];
+    [self.linecharView clear];
+}
 
 
 

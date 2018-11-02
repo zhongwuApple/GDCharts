@@ -46,12 +46,15 @@
     [self renderVerticalLineLayer:resource];
 }
 
+- (void)clear{
+    
+}
 
 - (void)renderVerticalLineLayer:(NSDictionary *)resource{
     
     GDChartsConfigModel *configModel = [resource valueForKey:@"GDChartsConfigModel"];
     NSArray *timeModels = [resource valueForKey:@"TimeModels"];    
-    CGFloat viewHeight = configModel.chartsHeight;
+    CGFloat viewHeight = configModel.linechartHeight;
     NSInteger count = timeModels.count;
     
     UIBezierPath *path = [UIBezierPath bezierPath];

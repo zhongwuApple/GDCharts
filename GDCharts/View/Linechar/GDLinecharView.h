@@ -11,6 +11,7 @@
 
 @interface GDLinecharView : UIView<GDChartsRender>
 
+@property (nonatomic, strong) CAShapeLayer      *lineLayer;
 
 
 @end
