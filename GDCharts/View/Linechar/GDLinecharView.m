@@ -50,6 +50,50 @@
 #pragma mark 渲染图层
 
 - (void)render:(NSDictionary *)resource{
+//    NSArray *points = [resource valueForKey:@"points"];
+//
+//    GDLinecharModel *firstPoint = points.firstObject;
+//    UIBezierPath *path = [UIBezierPath bezierPath];
+//    [path moveToPoint:firstPoint.position];
+//    for (NSInteger index=1; index<points.count; index++) {
+//        GDLinecharModel *amodel = points[index];
+//        [path addLineToPoint:amodel.position];
+//    }
+//
+//    if (self.oldPath) {
+//        CABasicAnimation * pathAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+//        pathAnimation.fromValue = (__bridge id)[self.oldPath CGPath];
+//        pathAnimation.toValue = (__bridge id)[path CGPath];
+//        pathAnimation.duration = 0.8;
+//        pathAnimation.removedOnCompletion = NO;
+//        pathAnimation.fillMode = kCAFillModeForwards;
+//        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//        [self.lineLayer addAnimation:pathAnimation forKey:@"animationKey"];
+//
+//
+//    }else{
+//      self.lineLayer.path = path.CGPath;
+//    }
+//    self.oldPath = path;
+
+    
+    
+
+    [self testAnimation:resource];
+    
+//    [self testrender:resource];
+    
+    
+}
+
+
+
+
+- (void)clear{
+    
+}
+
+- (void)testrender:(NSDictionary *)resource{
     NSArray *points = [resource valueForKey:@"points"];
     
     GDLinecharModel *firstPoint = points.firstObject;
@@ -59,18 +103,30 @@
         GDLinecharModel *amodel = points[index];
         [path addLineToPoint:amodel.position];
     }
+    self.lineLayer.path = path.CGPath;
+}
+
+- (void)testAnimation:(NSDictionary *)resource{
     
-//    self.lineLayer.path = path.CGPath;
+    NSArray *points = [resource valueForKey:@"points"];
     
+    GDLinecharModel *firstPoint = points.firstObject;
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:firstPoint.position];
+    for (NSInteger index=1; index<points.count; index++) {
+        GDLinecharModel *amodel = points[index];
+        [path addLineToPoint:amodel.position];
+    }
+
     {
         CABasicAnimation * pathAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
         pathAnimation.fromValue = (__bridge id)[self.oldPath CGPath];
         pathAnimation.toValue = (__bridge id)[path CGPath];
-//        pathAnimation.duration = self.aniDuration;
-        pathAnimation.duration = 0.8;
+        //        pathAnimation.duration = self.aniDuration;
+        pathAnimation.duration = 0.6;
         pathAnimation.removedOnCompletion = NO;
         pathAnimation.fillMode = kCAFillModeForwards;
-        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         [self.lineLayer addAnimation:pathAnimation forKey:@"animationKey"];
         
         self.oldPath = path;
@@ -78,15 +134,6 @@
     
     
 }
-
-
-
-- (void)clear{
-    
-}
-
-
-
 
 
 

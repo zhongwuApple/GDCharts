@@ -23,7 +23,7 @@
         
         self.linechartWidth = self.chartsWidth;
         self.linechartHeight = self.chartsHeight - 20;
-        self.candleWidth = 3;
+        self.candleWidth = 10;
     }
     return self;
 }

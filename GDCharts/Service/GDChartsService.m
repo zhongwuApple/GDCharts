@@ -14,8 +14,10 @@
 
 
 - (NSString *)randomPrice{
-    NSInteger number = (arc4random() % 100) + 200;
-    NSString *result = [NSString stringWithFormat:@"%ld", (long)number];
+    NSInteger fromNum = 50;
+    NSInteger toNum = 100;
+    NSInteger number = fromNum + arc4random() % (toNum-fromNum+1);
+    NSString *result = [NSString stringWithFormat:@"%ld", (long)number];    
     return result;
 }
 
@@ -29,7 +31,7 @@
         amodel.closingTime = currentTime-index;
         amodel.closingPrice = [self randomPrice];
         [result addObject:amodel];
-    }        
+    }
     return result;
 }
 

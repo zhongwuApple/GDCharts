@@ -60,15 +60,27 @@
 
 #pragma mark scrollView delegate
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
-    NSLog(@"scrollViewW  当前contentOffsetX = %f, 加速方向 = %f, targetContentOffsetX = %f", scrollView.contentOffset.x, velocity.x, targetContentOffset->x );
-    CGPoint contentOffset = CGPointMake(targetContentOffset->x, targetContentOffset->y);
-    [self.viewModel updateTargetContentOffset:contentOffset];
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+//    NSLog(@"WillBeginDragging == ---%f", scrollView.contentOffset.x);
+//    NSLog(@"start ----");
+    
+    
+    
 }
 
 
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
+//    NSLog(@"scrollViewW  当前contentOffsetX = %f, 加速方向 = %f, targetContentOffsetX = %f", scrollView.contentOffset.x, velocity.x, targetContentOffset->x );
+    CGPoint contentOffset = CGPointMake(targetContentOffset->x, targetContentOffset->y);
+    [self.viewModel updateTargetContentOffset:contentOffset];
+//    NSLog(@"end --");
+}
 
-
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    NSLog(@"****");
+//    [self.viewModel updateTargetContentOffset:scrollView.contentOffset];
+    
+}
 
 
 

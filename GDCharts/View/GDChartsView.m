@@ -64,6 +64,7 @@
 - (UIScrollView *)scrollView{
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        _scrollView.canCancelContentTouches = NO;
     }
     return _scrollView;
 }
